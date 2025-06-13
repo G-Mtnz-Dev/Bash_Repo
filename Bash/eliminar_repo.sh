@@ -1,0 +1,1 @@
+sudo add-apt-repository –remove ppa:repo-name/ppa 

@@ -1,0 +1,24 @@
+#!/bin/bash
+# /lib/systemd/system-shutdown/desm_datos
+
+DATOS_MOUNT="/media/DATOS"
+
+desmontar_si() {
+    MOUNT_PATH="$1"
+
+    # Verifica que el punto de montaje existe
+    if [ -d "$MOUNT_PATH" ]; then
+        if findmnt -rno TARGET "$MOUNT_PATH" > /dev/null 2>&1; then
+            echo "Desmontando $MOUNT_PATH"
+            umount -l "$MOUNT_PATH"
+        else
+            echo "$MOUNT_PATH no está montado"
+        fi
+    else
+        echo "Directorio $MOUNT_PATH no existe"
+    fi
+}
+
+desmontar_si "$DATOS_MOUNT"
+
+exit 0

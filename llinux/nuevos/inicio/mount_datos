@@ -1,0 +1,25 @@
+#!/bin/bash
+# /usr/local/bin/mount_datos
+
+MOUNT_POINT="/media/DATOS"
+UUID="524F567904D39ECB"
+FS_TYPE="ntfs3"
+
+# Comprobamos si ya está montado
+if mountpoint -q "$MOUNT_POINT"; then
+    echo "La partición ya está montada en $MOUNT_POINT."
+    exit 0
+fi
+
+# Comprobamos si el punto de montaje existe y tiene permisos
+if [ ! -d "$MOUNT_POINT" ]; then
+    echo "Error: El directorio $MOUNT_POINT no existe."
+    exit 1
+fi
+
+if [ ! -w "$MOUNT_POINT" ]; then
+    echo "Error: No tienes permisos de escritura en $MOUNT_POINT."
+    exit 2
+fi
+
+mount -t $FS_TYPE -o rw,uid=1001,gid=1001,umask=022 UUID=$UUID "$MOUNT_POINT"

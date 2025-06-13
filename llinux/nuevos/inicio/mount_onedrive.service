@@ -1,0 +1,15 @@
+[Unit]
+Description=Montar MS online Drive en el arranque
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/usr/local/bin/mount_onedrive
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mount_drive
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
+

@@ -1,0 +1,14 @@
+[Unit]
+Description=Montar Google Drive en el arranque
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=gerar_kde
+Group=gerar_kde
+ExecStart=/usr/local/bin/mount_drive.sh
+Environment=PATH=/usr/bin:/bin
+
+[Install]
+WantedBy=default.target

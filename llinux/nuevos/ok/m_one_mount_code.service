@@ -1,0 +1,16 @@
+[Unit]
+Description=Montar MS ONE·DRIVE en el arranque
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/m_one_mount.sh
+User=gerar_kde
+Group=gerar_kde
+Restart=on-failure
+RemainAfterExit=true
+Environment=PATH=/usr/bin:/bin
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Montar partición DATOS en el arranque
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/mount_datos.sh
+
+[Install]
+WantedBy=multi-user.target

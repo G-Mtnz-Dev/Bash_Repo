@@ -1,0 +1,47 @@
+#!/bin/bash
+#/lib/systemd/system-shutdown/desmontar_drives
+
+# Rutas de montaje
+DRIVE_MOUNT="/home/gerar_kde/Drive"
+ONEDRIVE_MOUNT="/home/gerar_kde/One_Drive"
+
+PERSISTENT_LOG="/var/log/desmontar_drives.log"
+DEST_DIR="/home/gerar_kde/.logs"
+DATE_SUFFIX="$(date '+%Y-%m-%d')"
+DEST_LOG="$DEST_DIR/desmontar_drives_$DATE_SUFFIX.log"
+
+# log="/var/log/desmontar_drives.log"
+# echo "[`date`] Iniciando desmontaje de unidades" >> "$log"
+
+echo "[`date`] Iniciando desmontaje de unidades" >> "$PERSISTENT_LOG"
+
+
+desmontar_si_montado() {
+    local punto="$1"
+    if grep -qs "$punto" /proc/mounts; then
+        echo "[`date`] Desmontando $punto" >> "$PERSISTENT_LOG"
+        fusermount -u "$punto"
+        if [ $? -eq 0 ]; then
+            echo "[`date`] $punto desmontado correctamente." >> "$PERSISTENT_LOG"
+        else
+            echo "[`date`] Error al desmontar $punto" >> "$PERSISTENT_LOG"
+        fi
+    else
+        echo "[`date`] $punto no está montado. Nada que desmontar." >> "$PERSISTENT_LOG"
+    fi
+}
+
+desmontar_si_montado "$DRIVE_MOUNT"
+desmontar_si_montado "$ONEDRIVE_MOUNT"
+
+echo "[`date`] Desmontaje completado" >> "$PERSISTENT_LOG"
+
+# Función para copiar el log si existe el directorio destino
+copiar_log_a_home() {
+if [ -d "$DEST_DIR" ]; then
+cp "$PERSISTENT_LOG" "$DEST_LOG"
+echo "Log copiado a $DEST_LOG" >> "$PERSISTENT_LOG"
+else
+echo "Directorio de destino no encontrado: $DEST_DIR" >> "$PERSISTENT_LOG"
+fi
+}

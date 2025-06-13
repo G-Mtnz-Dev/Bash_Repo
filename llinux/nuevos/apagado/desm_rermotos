@@ -1,0 +1,23 @@
+#!/bin/bash
+#/lib/systemd/system-shutdown/desm_remotos
+
+DRIVE_MOUNT="/home/gerar_kde/Drive"
+ONEDRIVE_MOUNT="/home/gerar_kde/One_Drive"
+
+desmontar_si_montado() {
+    local punto="$1"
+    if grep -qs "$punto" /proc/mounts; then
+        echo "Desmontando $punto"
+        fusermount -u "$punto"
+        if [ $? -eq 0 ]; then
+            echo "$punto desmontado correctamente."
+        else
+            echo "Error al desmontar $punto"
+        fi
+    else
+        echo "$punto no está montado. Nada que desmontar."
+    fi
+}
+
+desmontar_si_montado "$DRIVE_MOUNT"
+desmontar_si_montado "$ONEDRIVE_MOUNT"

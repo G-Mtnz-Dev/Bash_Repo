@@ -1,0 +1,22 @@
+W: Omitiendo la adquisición del archivo configurado «numbat/binary-i386/Packages», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/binary-amd64/Packages», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/i18n/Translation-en», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/i18n/Translation-es», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/i18n/Translation-es_ES.UTF-8», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/i18n/Translation-es_ES», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/dep11/Components-amd64.yml», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/dep11/icons-48x48.tar», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/dep11/icons-64x64.tar», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/dep11/icons-64x64@2.tar», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/dep11/icons-128x128.tar», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/Contents-i386», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/Contents-amd64», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+W: Omitiendo la adquisición del archivo configurado «numbat/cnf/Commands-amd64», ya que el repositorio «http://apt.insync.io/ubuntu noble InRelease» no tiene el componente «numbat» (¿componente mal escrito en sources.list?)
+E: El repositorio «https://ppa.launchpadcontent.net/team-xbmc/ppa/ubuntu noble Release» no tiene un fichero de Publicación.
+W: No se puede actualizar de un repositorio como este de forma segura y por tanto está deshabilitado por omisión.
+W: Vea la página de manual apt-secure(8) para los detalles sobre la creación de repositorios y la configuración de usuarios.
+W: Error de GPG: https://apt.packages.shiftkey.dev/ubuntu any InRelease: Las firmas siguientes no se pudieron verificar porque su clave pública no está disponible: NO_PUBKEY 7FC979028B1997C1
+E: El repositorio «https://apt.packages.shiftkey.dev/ubuntu any InRelease» no está firmado.
+W: No se puede actualizar de un repositorio como este de forma segura y por tanto está deshabilitado por omisión.
+W: Vea la página de manual apt-secure(8) para los detalles sobre la creación de repositorios y la configuración de usuarios.
+E: https://apt.packages.shiftkey.dev/ubuntu any InRelease is not (yet) available (Las firmas siguientes no se pudieron verificar porque su clave pública no está disponible: NO_PUBKEY 7FC979028B1997C1)

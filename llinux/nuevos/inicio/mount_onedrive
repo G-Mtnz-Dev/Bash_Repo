@@ -1,0 +1,31 @@
+#!/bin/bash
+# /usr/local/bin/mount_onedrive
+
+MOUNT_POINT="/home/gerar_kde/One_Drive"
+
+# Verifica si ya está montado
+if mountpoint -q "$MOUNT_POINT"; then
+    echo "Google Drive ya está montado en $MOUNT_POINT"
+    exit 0
+fi
+
+# Verifica que el punto de montaje exista
+if [ ! -d "$MOUNT_POINT" ]; then
+    echo "Error: el directorio $MOUNT_POINT no existe."
+    exit 1
+fi
+
+# Verifica si hay conectividad antes de montar
+if ! ping -c 1 -W 2 www.googleapis.com &> /dev/null; then
+    echo "No hay conexión a internet. Reintentará más tarde..." >>
+    exit 2
+fi
+
+# Montar con rclone
+exec /usr/bin/rclone mount \
+    onedrive: "$MOUNT_POINT" \
+    --vfs-cache-mode writes \
+    --allow-other \
+    --umask 002 \
+
+    exit 0
