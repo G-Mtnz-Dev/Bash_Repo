@@ -1,0 +1,83 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    .gitigore                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: Gerardo Mtnz <dev.gmartinez@gmail.com>     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/03/11 21:42:13 by Gerardo Mtn       #+#    #+#              #
+#    Updated: 2025/03/21 06:42:48 by Gerardo Mtn      ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#------------------------------------------------
+# IGNORA LOS ARCHIVOS DEL REPO LOCAL 
+#------------------------------------------------
+
+# ignore dir Docs_edit
+/linux_docs/docs_edit
+
+# ignore EDITABLE-DOCS 
+#*.odt
+#*.odt#
+#*.docx
+
+# ignore ALL .xcf files
+*.xcf
+
+#------------------------------------------------
+# IGNORA MIS ARCHIVOS DE CABECERA  
+#------------------------------------------------
+
+# Ignorar los Archivos de mi Cabecera de Archivo excepto el Md
+my_header.*
+!my_header.md
+
+#------------------------------------------------
+# IGNORA LOS ARCHIVOS DE COMPILACIÓN DE C 
+#------------------------------------------------
+
+# Ignorar los Archivos de compilación de C:
+*.out
+*.o
+
+#------------------------------------------------
+# IGNORA LOS ARCHIVOS QUE GENERA LINUX
+#------------------------------------------------
+
+# Ignore all Folder Icon Files
+*.directory
+
+# ignora los archivos que genera Bash
+*.swo
+
+# Archivos que genera Vim
+*.swp
+*.swo
+
+# Aarchivos que genera VSCode
+*.vscode
+
+# Archivos temporales que genera Files
+*.DS_store
+
+#------------------------------------------------
+# IGNORA LOS ARCHIVOS TEMPORALES DEL SISTEMA
+#------------------------------------------------
+
+# ignore ALL files in ANY directory named temp
+temp/
+
+# Archivos de respaldo y temporales
+*.bak       # Archivos de respaldo (.bak)
+*.tmp       # Archivos temporales generales
+*.~*        # Archivos con tilde (~) al final (backup)
+
+# Caché del sistema
+.cache/
+.thumbnails/
+.Trash-*/
+
+# Archivos de sesiones y bloqueos
+*.lock
+*.pid
