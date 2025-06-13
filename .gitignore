@@ -15,7 +15,7 @@
 #------------------------------------------------
 
 # ignore dir Docs_edit
-/linux_docs/docs_edit
+#/linux_docs/docs_edit
 
 # ignore EDITABLE-DOCS 
 #*.odt
@@ -23,7 +23,7 @@
 #*.docx
 
 # ignore ALL .xcf files
-*.xcf
+#*.xcf
 
 #------------------------------------------------
 # IGNORA MIS ARCHIVOS DE CABECERA  
@@ -53,7 +53,6 @@ my_header.*
 
 # Archivos que genera Vim
 *.swp
-*.swo
 
 # Aarchivos que genera VSCode
 *.vscode
