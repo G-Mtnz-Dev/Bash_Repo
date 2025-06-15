@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FreeFileSync XmlType="BATCH" XmlFormat="23">
+<FreeFileSync XmlType="GUI" XmlFormat="23">
     <Notes/>
     <Compare>
-        <Variant>TimeAndSize</Variant>
+        <Variant>Content</Variant>
         <Symlinks>Exclude</Symlinks>
         <IgnoreTimeShift/>
     </Compare>
     <Synchronize>
         <Differences LeftOnly="right" LeftNewer="right" RightNewer="right" RightOnly="right"/>
         <DeletionPolicy>Versioning</DeletionPolicy>
-        <VersioningFolder Style="Replace">/home/gerar_kde/Code/Git-Code/Bash_Repo/Test/syncro_eliminados</VersioningFolder>
+        <VersioningFolder Style="Replace">/media/DATOS/Ut Linux/Kde-Syncro-Eliminados/Iconos-Eliminados</VersioningFolder>
     </Synchronize>
     <Filter>
         <Include>
@@ -22,7 +22,8 @@
             <Item>*/.git/</Item>
             <Item>*/.vscode/</Item>
             <Item>.gitignore</Item>
-            <Item>.directory</Item>
+            <Item>/Iconos para Hacer/</Item>
+            <Item>/Perfiles JJFlash/</Item>
         </Exclude>
         <SizeMin Unit="None">0</SizeMin>
         <SizeMax Unit="None">0</SizeMax>
@@ -30,18 +31,13 @@
     </Filter>
     <FolderPairs>
         <Pair>
-            <Left>/home/gerar_kde/.Syncro</Left>
-            <Right>/home/gerar_kde/Code/LLinux-Code/syncro_scripts</Right>
+            <Left>/home/gerar_kde/Imágenes/.Iconos</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Iconos</Right>
         </Pair>
     </FolderPairs>
     <Errors Ignore="true" Retry="0" Delay="5"/>
     <PostSyncCommand Condition="Completion"/>
-    <LogFolder/>
+    <LogFolder>/home/gerar_kde/.logs/Syncro_Logs/Logs_Iconos</LogFolder>
     <EmailNotification Condition="Always"/>
-    <GridViewType>Action</GridViewType>
-    <Batch>
-        <ProgressDialog Minimized="false" AutoClose="false"/>
-        <ErrorDialog>Show</ErrorDialog>
-        <PostSyncAction>None</PostSyncAction>
-    </Batch>
+    <GridViewType>Difference</GridViewType>
 </FreeFileSync>

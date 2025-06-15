@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FreeFileSync XmlType="BATCH" XmlFormat="23">
+<FreeFileSync XmlType="GUI" XmlFormat="23">
     <Notes/>
     <Compare>
         <Variant>TimeAndSize</Variant>
@@ -22,7 +22,6 @@
             <Item>*/.git/</Item>
             <Item>*/.vscode/</Item>
             <Item>.gitignore</Item>
-            <Item>.directory</Item>
         </Exclude>
         <SizeMin Unit="None">0</SizeMin>
         <SizeMax Unit="None">0</SizeMax>
@@ -39,9 +38,4 @@
     <LogFolder/>
     <EmailNotification Condition="Always"/>
     <GridViewType>Action</GridViewType>
-    <Batch>
-        <ProgressDialog Minimized="false" AutoClose="false"/>
-        <ErrorDialog>Show</ErrorDialog>
-        <PostSyncAction>None</PostSyncAction>
-    </Batch>
 </FreeFileSync>
