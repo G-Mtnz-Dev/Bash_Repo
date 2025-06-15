@@ -1,0 +1,12 @@
+============ SCRIPTS USUARIO =======================
+/usr/local/bin
+
+============ SERVICIOS ARRANQUE ====================
+/etc/systemd/systemd
+
+============ LINKS SERVICIOS =======================
+/etc/systemd/system/default.target.wants
+
+============ SERVICIOS REINICIO-APAGADO ============
+/usr/lib/systemd/system-shutdown
+

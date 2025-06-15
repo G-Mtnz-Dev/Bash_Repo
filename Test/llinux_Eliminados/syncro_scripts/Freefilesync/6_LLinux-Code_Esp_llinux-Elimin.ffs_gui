@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="GUI" XmlFormat="23">
+    <Notes>Ejecutar antes 5_Syncro_Esp_Syncro-Elimin</Notes>
+    <Compare>
+        <Variant>TimeAndSize</Variant>
+        <Symlinks>Exclude</Symlinks>
+        <IgnoreTimeShift/>
+    </Compare>
+    <Synchronize>
+        <Differences LeftOnly="right" LeftNewer="right" RightNewer="right" RightOnly="right"/>
+        <DeletionPolicy>Versioning</DeletionPolicy>
+        <VersioningFolder Style="Replace">/home/gerar_kde/Code/Git-Code/Bash_Repo/Test/llinux_Eliminados</VersioningFolder>
+    </Synchronize>
+    <Filter>
+        <Include>
+            <Item>*</Item>
+        </Include>
+        <Exclude>
+            <Item>*/.Trash-*/</Item>
+            <Item>*/.recycle/</Item>
+            <Item>*/.directory/</Item>
+            <Item>*/.git/</Item>
+            <Item>*/.vscode/</Item>
+            <Item>.gitignore</Item>
+        </Exclude>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+        <TimeSpan Type="None">0</TimeSpan>
+    </Filter>
+    <FolderPairs>
+        <Pair>
+            <Left>/home/gerar_kde/Code/LLinux-Code</Left>
+            <Right>/home/gerar_kde/Code/Git-Code/Bash_Repo/lap_linux_code</Right>
+        </Pair>
+    </FolderPairs>
+    <Errors Ignore="true" Retry="0" Delay="5"/>
+    <PostSyncCommand Condition="Completion"/>
+    <LogFolder/>
+    <EmailNotification Condition="Always"/>
+    <GridViewType>Action</GridViewType>
+</FreeFileSync>
