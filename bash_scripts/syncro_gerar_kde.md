@@ -18,20 +18,23 @@ B_DIR="/home/gerar_kde/.Syncro/Batch"
 
 ## **Explicación Script**
 
-**FreeFileSync no acepta múltiples archivos** `_**<.ffs_batch>**_` **en una sola llamada. Cada archivo debe ejecutarse por separado.**
-
 <table><tbody><tr><td><ul><li>FreeFileSync no acepta múltiples archivos &lt;.ffs_batch&gt; en una sola llamada. Cada archivo debe ejecutarse por separado</li></ul></td></tr></tbody></table>
 
 ### **Creamos 2 Variables:**
 
-             1 - Para FreeFileSync con la ruta y el ejecutable:    `**FFS**`
-
-             2 - Para la ruta de los Archivos de sincronización  `**B_DIR**`
+<table><tbody><tr><td>1 - &nbsp; &nbsp;Para FreeFileSync con la ruta y el ejecutable: &nbsp; &nbsp;<code><strong>FFS</strong></code></td></tr><tr><td>2 - &nbsp; &nbsp;Para la ruta de los Archivos de sincronización &nbsp;<code><strong>B_DIR</strong></code></td></tr></tbody></table>
 
 ```
 FFS="/usr/local/bin/
+```
+
+```
 B_DIR="/home/gerar_kde/.Syncro/Batch"
 ```
+
+### **Llamamos a cada Archivo:**
+
+<table><tbody><tr><td><pre><code class="language-">"$[Variable-Freefilesync]" "[Variable-Ruta\al\Archivo]Archivo"</code></pre></td></tr></tbody></table>
 
 FFS="/usr/local/bin/  
 BATCH\_DIR="/home/gerar\_kde/.Syncro/Batch"
