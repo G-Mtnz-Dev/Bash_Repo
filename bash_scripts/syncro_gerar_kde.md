@@ -34,7 +34,13 @@ B_DIR="/home/gerar_kde/.Syncro/Batch"
 
 ### **Llamamos a cada Archivo:**
 
-<table><tbody><tr><td><pre><code class="language-">"$[Variable-Freefilesync]" "[Variable-Ruta\al\Archivo]Archivo"</code></pre></td></tr></tbody></table>
+<table><tbody><tr><td><strong>"$[</strong><i>Variable-Freefilesync</i><strong>]" "[</strong><i>Variable-Ruta\al\Archivo</i><strong>]Archivo"</strong></td></tr></tbody></table>
 
-FFS="/usr/local/bin/  
-BATCH\_DIR="/home/gerar\_kde/.Syncro/Batch"
+`"$FFS" "$B_DIR/1_Perfiles_Esp_Contenido_Perfiles-Elimin.ffs_batch"`
+
+```
+"$FFS" "$B_DIR/2_Iconos_Esp_Contenido_Iconos-Elimin.ffs_batch"
+```
+
+  
+`"$FFS" "$B_DIR/3_LnxRepo_Esp_Elim_Perm.ffs_batch"`
