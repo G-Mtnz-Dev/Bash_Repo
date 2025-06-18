@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="GUI" XmlFormat="23">
+    <Notes/>
+    <Compare>
+        <Variant>TimeAndSize</Variant>
+        <Symlinks>Exclude</Symlinks>
+        <IgnoreTimeShift/>
+    </Compare>
+    <Synchronize>
+        <Differences LeftOnly="right" LeftNewer="right" RightNewer="right" RightOnly="right"/>
+        <DeletionPolicy>Permanent</DeletionPolicy>
+        <VersioningFolder Style="Replace"/>
+    </Synchronize>
+    <Filter>
+        <Include>
+            <Item>*</Item>
+        </Include>
+        <Exclude>
+            <Item>*/.Trash-*/</Item>
+            <Item>*/.recycle/</Item>
+            <Item>*/.git/</Item>
+            <Item>*/.vscode/</Item>
+            <Item>.gitignore</Item>
+        </Exclude>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+        <TimeSpan Type="None">0</TimeSpan>
+    </Filter>
+    <FolderPairs>
+        <Pair>
+            <Left>/home/gerar_kde/Models 3D</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Models 3D</Right>
+            <Filter>
+                <Include>
+                    <Item>*</Item>
+                </Include>
+                <Exclude>
+                    <Item>/Blender Tutos/</Item>
+                </Exclude>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+                <TimeSpan Type="None">0</TimeSpan>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/.vim</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Vim</Right>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/.logs</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Logs</Right>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/Vídeo</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Video</Right>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/Plantillas</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Plantillas</Right>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/Documentos</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Docs</Right>
+            <Filter>
+                <Include>
+                    <Item>*</Item>
+                </Include>
+                <Exclude>
+                    <Item>/CV Gerardo Mtnz 1/</Item>
+                </Exclude>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+                <TimeSpan Type="None">0</TimeSpan>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/Laptop</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Laptop</Right>
+            <Filter>
+                <Include>
+                    <Item>*</Item>
+                </Include>
+                <Exclude>
+                    <Item>/Accesos/</Item>
+                </Exclude>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+                <TimeSpan Type="None">0</TimeSpan>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/Code</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Code</Right>
+            <Filter>
+                <Include>
+                    <Item>*</Item>
+                </Include>
+                <Exclude>
+                    <Item>/LLinux-Code/syncro_scripts/</Item>
+                </Exclude>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+                <TimeSpan Type="None">0</TimeSpan>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/Imágenes</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Imágenes</Right>
+            <Filter>
+                <Include>
+                    <Item>*</Item>
+                </Include>
+                <Exclude>
+                    <Item>/.Iconos/Iconos para Hacer/</Item>
+                    <Item>/.Perfiles/Perfiles JJFlash/</Item>
+                </Exclude>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+                <TimeSpan Type="None">0</TimeSpan>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>/home/gerar_kde/.Syncro</Left>
+            <Right>/media/DATOS/Lap-Linux/Kde Plasma/Copy/Syncro</Right>
+        </Pair>
+    </FolderPairs>
+    <Errors Ignore="true" Retry="0" Delay="5"/>
+    <PostSyncCommand Condition="Completion"/>
+    <LogFolder>/media/DATOS/Lap-Linux/Syncro-Logs</LogFolder>
+    <EmailNotification Condition="Always"/>
+    <GridViewType>Action</GridViewType>
+</FreeFileSync>
